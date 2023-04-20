@@ -1,0 +1,173 @@
+body{
+background-color: black;
+}
+
+a:hover{
+     -ms-transform: scale(2, 3); /* IE 9 */
+     -webkit-transform: scale(2, 3); /* Safari */
+     transform: scale(1, 3);
+
+}
+button:hover{
+   -ms-transform: scale(1.3, 3); /* IE 9 */
+   -webkit-transform: scale(1.3, 3); /* Safari */
+    transform: scale(1.3, 3);
+}
+
+
+form{
+font-size:25px;
+
+}
+
+.container-fluid{
+    padding:15vh;
+    background-color: black;
+
+
+}
+#main-content{
+    padding:3vw;
+    overflow-y:hidden;
+    height:60vh;
+    background-color: black;
+}
+
+#navBtns{
+    background-color
+}
+
+#page-info{
+    font-size:20px;
+}
+.messageCenter{
+
+    padding:10px;
+
+    overflow-y:auto;
+
+
+}
+
+.theBGImg{
+ background-image: url(/images/messenger.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+#inbox{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:80vh;
+
+}
+#compose{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:69vh;
+}
+
+#sentMessages{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:80vh;
+}
+
+@keyframes changeSomething {
+
+
+    0%{
+
+        background-color: #2b6cb3;
+        background-image:url(/images/inbox.png);
+        background-repeat:no-repeat;
+        background-position-x:300px;
+
+     }
+
+
+
+    25%{
+
+        background-color: white;
+        text-shadow: 2px 2px 4px white;
+
+        }
+
+
+    90%{
+
+                 background-image:url(/images/inbox.png);
+                 background-repeat:no-repeat;
+                 background-position-x:1200px;
+
+              }
+    100%{
+
+
+    text-shadow: 2px 2px 4px white;
+    background-image:url(/images/inbox.png);
+    background-repeat:no-repeat;
+    background-position-x:300px;
+    }
+}
+
+#pgLabel{
+
+        animation-name: changeSomething;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+}
+
+.pageBg{
+    background-image: linear-gradient(to right, black , rgba(0,0,0,0.7));
+}
+
+/**css for compose.html**/
+
+
+#messageCompose{
+    padding:10px;
+    max-width:800px;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+
+#messageBox{
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+/**
+#message{
+max-height:245px;
+}
+
+**/
+/** end of compose css **/
+
+/** Css for inbox and sentMessages  **/
+
+.messageCenter{
+    padding:10px;
+    max-width:800px;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+/** end of inbox and sentMessages css **/
+
+
+
+#theHiddenInputs{
+position:absolute
+
+}
